@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "uniteaSans";
+  src: url("../../frontend/fonts/UniteaSans-Regular.ttf") format("truetype");
+  font-weight: 700;
+  size: 19px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+@font-face {
+  font-family: "uniteaSansBold";
+  src: url("../../frontend/fonts/UniteaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  size: 19px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+@font-face {
+  font-family: "uniteaSansSemiBold";
+  src: url("../../frontend/fonts/UniteaSans-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  size: 19px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+:root {
+  --color1: #1497df;
+  --color2: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "uniteaSans";
+}
+
+.mainPage {
+  background-color: white;
+  padding: 0 25px;
+}
+
+header {
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color1);
+}
+
+header .fa-bars {
+  font-size: 35px !important;
+  cursor: pointer;
+}
+
+.content {
+  color: #2C2F48;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding: 25px 0;
+  font-family: "uniteaSansBold";
+}
+
+.statsBox {
+  border: 2px solid rgb(194, 194, 194);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#total_services {
+  font-family: "uniteaSansBold";
+  font-size: 70px;
+}
+
+.statsBox p {
+  font-size: 25px;
+  font-family: "uniteaSansSemiBold";
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: var(--color1);
+  color: white;
+  border: 2px solid var(--color1);
+  max-width: 200px;
+}
+
+.btn_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.btn_div .btn {
+  padding: 10px 35px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+}
+
+/* adminpage */
+img{
+  width: 100px;
+}
+
+#croud{
+  width: 100%; 
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#back {
+  display: none;
+}
+
+#hr {
+  display: none;
+}
+
+#add {
+  display: none;
+}
+
+
+#allcrodtableselecte{
+  width: 100%;
+}
+
+table{
+  justify-content: space-between;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+#background{
+  background-color: rgba(20, 151, 223, 0.48);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#delete-div{
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  position: fixed;
+  border-radius: 10px;
+  width: 349.5px;
+  height: 255.01px;
+}
+#delete-div button{
+  margin-left: 65px;
+  width: 200px;
+}
+#remove{
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 48px;
+  color: rgba(44, 47, 72, 1);
+}
+#sure{
+  font-weight: 400;
+  font-size: 12.39px;
+  line-height: 18.59px;
+  text-align: center;
+}
+.remove{
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: var(--color2);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  max-width: 200px;
+  cursor: pointer;
+}
+.remove:hover{
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.cancel{
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: var(--color1);
+  color: var(--color2);
+  border: 2px solid var(--color1);
+  max-width: 289.5px;
+  cursor: pointer;
+}
+.cancel:hover{
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: var(--color2);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  max-width: 289.5px;
+  cursor: pointer;
+}
+
+.selectedService {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selectedService:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.form_btns {
+  display: flex;
+  gap: 10px;
+}
+
+.form_btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.serName {
+  font-size: 20px !important;
+}
+
+.edit {
+  background-color: #1DBF73;
+  border: 2px solid #1DBF73;
+}
+
+.delete {
+  background-color: #FF4C4C;
+  border: 2px solid #FF4C4C;
+}
+
+.delete:hover {
+  color: #FF4C4C;
+  background-color: white;
+}
+
+.edit:hover {
+  color: #1DBF73;
+  background-color: white;
+}
